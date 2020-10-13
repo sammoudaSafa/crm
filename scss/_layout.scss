@@ -1,0 +1,35 @@
+.col {
+
+    flex: 1 1 100%;
+    position:relative;
+
+    &--halves{
+        flex: 1 1 50%;
+    }
+    &--quarters{
+        flex:1 1 25%;
+    }
+
+    &--thirds{
+        flex: 1 1 33.33%;
+    }
+}
+
+.flex-grid {
+    position:relative;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+@media (max-width: 1000px) {
+    .flex-grid,
+    .col {
+        display: block;
+        .col {
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "card"; //extends
+.news {
+    // News herite maintenant du style de base dans card
+    @extend .card;
+
+    &--cat {
+        font-size: $category;
+        padding: 5px 5px 5px 75px;
+        margin-top:$base-padding;
+        background-color: $white;
+        position:absolute;
+        top:20px;
+    }
+
+    &--date {
+        position:absolute;
+        padding: 5px 75px 5px 5px ;
+        margin-top:$base-padding;
+        font-size: $category;
+        background-color: $white;
+        text-align: right;
+        top:20px;
+        right:0;
+    }
+
+    &--titles {
+        margin-top:25%;
+        max-width: 45%;
+        background-color: $white;
+        padding: $base-padding;
+        text-align: right;
+    }
+
+    &--content {
+        font-family: $roboto-slab;
+        font-size: $card-desc;
+        padding: $base-padding;
+        text-align: left;
+    }
+
+    &--more {
+        @extend .pull-right;
+        font-size:$h3;
+        padding:20px;
+        text-align: right;
+       
+    }
+}
+
+@media (max-width: 999px) {
+    .news {
+        padding-top:25%;
+    }
+
+}

@@ -1,0 +1,62 @@
+.h1 {
+	font-family: $title-fonts;
+	font-size: $h1;
+}
+
+.h2 {
+	font-family: $subtitle-fonts;
+	font-size: $h2;
+}
+
+a {
+	color:$links;
+	&:hover {
+		color:lighten($links,25%);
+	}
+}
+
+button{
+	padding: 10px;
+	background-color: lighten($drab, 50%);
+	border: none;
+	&:hover{
+		font-weight: bold;
+	}
+}
+
+body {
+	font-family: $roboto-slab;
+	font-size: $base-size;
+}
+
+input{
+	background-color:lighten(gray,25%);
+	border:1px solid darken($gray, 25%);
+	border-radius:5px;
+	padding:5px;
+	color:white;
+	&.is-double{
+		width:50%;
+	}
+}
+
+.pull-left{
+	float:left;
+}
+
+.pull-right{
+	float:right;
+}
+
+/**
+* Font size media queries
+*/
+
+@media all and (min-width: 1000px) {
+	.h1 {
+		font-size: 4rem;
+	}
+	.h2 {
+		font-size: 3rem;
+	}
+}

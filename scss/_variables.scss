@@ -1,0 +1,28 @@
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Yellowtail&dsplay=swap);
+$roboto-slab: 'Roboto Slab', serif;   
+$yellowtail: 'Yellowtail', sans-serif;
+$fonts: Helvetica, sans-serif;
+$subtitle-fonts: $roboto-slab;
+$title-fonts: $roboto-slab;
+
+// Font sizes
+$h1: 2rem;
+$h2: 1.50rem;
+$h3: 1.25rem;
+$card-desc:1.2rem;
+$base-size: 1rem; // 12px
+$category: 1.3rem;
+$links-size: 1.1rem;
+
+//Layout
+$base-padding: 1rem; //12px
+
+// Colors 
+$links:rgb(46, 50, 112);
+$gray:#be3a3a;
+$dark-gray:darken($gray,25%);
+$black:#000000;
+$white:#ffffff;
+$drab: #393939;
+$flat: #5b5b5b

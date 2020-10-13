@@ -1,0 +1,13 @@
+.is-error{
+    color:red;
+    background-color: lighten($links, 25%);
+}
+
+.is-warning{
+    color:orange;
+    background-color: lighten(orange, 25%);
+}
+
+.is-active{
+    background-color:#f55;
+}
