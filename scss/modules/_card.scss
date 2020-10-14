@@ -1,8 +1,40 @@
-.card {
-    min-height:250px;
-    margin:10px;
-    background-color: $gray;
-    box-sizing: border-box;
-    background-size: cover;
-    background-repeat: no-repeat;
+.card{
+	width: 220px;
+	margin: 20px;
+	padding: 40px 30px;
+	background: $body;
+	border-radius: 40px;
+	box-shadow: -6px -6px 20px rgba(253,253,253,1),
+	             6px 6px 20px rgba(0,0,0,0.1);
+
+				 &:hover{
+		box-shadow: inset -12px -12px 12px rgba(253,253,253,1),
+                    inset 12px 12px rgba(0,0,0,0.1);
+                    
+                }
+
+        &--imgBx{
+		position: relative;
+        text-align: center;
+        img {
+           max-width:80px;
+            height: 80px;
+        }
+    }
+        &--contentBx{
+           position: relative;
+           margin-top: 20px;
+           text-align: center;
+           color:$text;
+           font-weight: 400;
+           font-size: 1.3em;
+          
+           &--title{
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 1.3em;
+            letter-spacing: 2px;
+           }
+
+        }
 }
