@@ -25,15 +25,16 @@ button{
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	min-height: 100vh;
 	font-family: $quickSand;
 	font-size: $base-size;
 	background: $body;
 }
-
+.cardcontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 input{
 	background-color:lighten(gray,25%);
 	border:1px solid darken($gray, 25%);

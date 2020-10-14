@@ -10,9 +10,15 @@
 </head>
 
 <body>
+  <header id="header" class="flex grid">
+        <div class="container">
+            <div>
+                <h1>This is an assignement</h1>
+            </div>
+            
+        </div>
 
-
-     <nav class="nav" id="nav-menu">
+     <!-- <nav class="nav" id="nav-menu">
           <?php wp_nav_menu(
                array(
                     'theme_location' => 'main_nav',
@@ -20,5 +26,5 @@
                     'menu_class' => 'nav__menu container-big flex center'
                )
           ); ?>
-     </nav>
-     </header>
+     </nav> -->
+  </header>

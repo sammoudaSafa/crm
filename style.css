@@ -147,13 +147,15 @@ button {
     font-weight: bold; }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   background: #E3E6EC; }
+
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 input {
   background-color: silver;
@@ -179,6 +181,20 @@ input {
 
   .h2 {
     font-size: 3rem; } }
+#header {
+  background-color: #EFF2FE; }
+  #header .container {
+    height: 200px;
+    width: 1020px;
+    margin: auto;
+    display: flex;
+    flex-direction: row no-wrap;
+    justify-content: space-between;
+    padding: 8vh; }
+    @media (max-width: 999px) {
+      #header .container {
+        width: unset; } }
+
 #footer {
   background-color: #EFF2FE; }
   #footer .container {
@@ -241,41 +257,5 @@ input {
       font-weight: 700;
       font-size: 1.3em;
       letter-spacing: 2px; }
-
-.card {
-  width: 220px;
-  margin: 20px;
-  padding: 40px 30px;
-  background: #E3E6EC;
-  border-radius: 40px;
-  box-shadow: -6px -6px 20px #fdfdfd, 6px 6px 20px rgba(0, 0, 0, 0.1); }
-  .card:hover {
-    box-shadow: inset -12px -12px 12px #fdfdfd, inset 12px 12px rgba(0, 0, 0, 0.1); }
-  .card--imgBx {
-    position: relative;
-    text-align: center; }
-    .card--imgBx img {
-      max-width: 80px;
-      height: 80px; }
-  .card--contentBx {
-    position: relative;
-    margin-top: 20px;
-    text-align: center;
-    color: #00609D;
-    font-weight: 400;
-    font-size: 1.3em; }
-    .card--contentBx--title {
-      margin-bottom: 20px;
-      font-weight: 700;
-      font-size: 1.3em;
-      letter-spacing: 2px; }
-
-.container {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 1100px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,10 @@
 <?php
 get_header();
 ?>
-<div class="container">
+
+<main id="main">
+<div class="container" class="flex grid">
+    <div class="cardcontainer">
     <div class="card">
         <div class="card--imgBx">
             <img src="<?php echo get_template_directory_uri(); ?>/img/contact.png" alt="title1">
@@ -38,6 +41,7 @@ get_header();
 
         </div>
     </div>
+   </div>
 </div>
 
 <?php

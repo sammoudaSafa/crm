@@ -1,4 +1,20 @@
 
+#header{
+    background-color:$header;
+    .container{
+        height: 200px;
+        width: 1020px;
+        margin: auto;
+        display: flex;
+        flex-direction: row no-wrap;
+        justify-content: space-between;
+        padding: 8vh;
+        @media (max-width:999px)
+        {
+            width:unset;
+        }
+    }
+}
 #footer{
     background-color: $header;
     .container{
